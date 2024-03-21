@@ -1,26 +1,8 @@
-function print (name, age, profession, gender) {
 
-	document.write (`
-Name ${name} <br>
-Age: ${age}<br>
-Profession: ${profession} <br>
-Gender: ${gender}
-`)
+let kate = ['Kate', '30', 'programmer', 'playing football'];
+let tom = ['Tom', '29', 'runner', 'playing games'];
+let julie = ['Julie', '23', 'tester', 'playing hockey'];
 
-	console.log (`
-			Name ${name}
-			Age: ${age}
-		  Profession: ${profession} 
-		  Gender: ${gender}	
-		`
-	)
-	// document.write("Name: " + name);
-	//
-	// document.write("Age: " + age);
-	//
-	// document.write("Profession: " + profession);
-	//
-	// document.write("Gender: " + gender);
-}
-
-print ("Tom", 30, "Programmer", "male");
+// let person=[...kate, 'Marc', '27', 'engineer', 'computing', ...julie];
+let person=['Marc', '27', ...kate, 'engineer', 'computing', julie];
+console.log (person);
