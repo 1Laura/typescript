@@ -7,3 +7,4 @@ for (let i = 0; i < buttons.length; i++) {
 		alert("Button " + i + " pressed");
 	})
 }
+
