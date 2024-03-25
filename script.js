@@ -1,35 +1,33 @@
+let person = new Set ();
 
-let kate = ['Kate', '30', 'programmer', 'playing football'];
-let tom = ['Tom', '29', 'runner', 'playing games'];
-let julie = ['Julie', '23', 'tester', 'playing hockey'];
+person.add ('kate');
+person.add ('john');
+person.add ('paul');
 
-let person = new Map([
-		[kate],
-		[new Date(), 'today']
-]);
-
-console.log (person)
-
+console.log (person.size)
+person.forEach (function (e) {
+	console.log (e)
+})
 
 
+// person.clear()
+// person.delete('john')
+// console.log (person)
 
-// let person = new Map();
-// person.set(function print(){
-// 	console.log ("hey");
-// }, 'Marc');
+// console.log (numSet.has('john'))
+// console.log (numSet.has('abc'))
+// console.log (person)
 
-// person.set('name1', 'Marc1');
-// person.set('name2', 'Marc2');
-// person.set('name3', 'Marc3');
-// person.set('name4', 'Marc4');
-// person.set('name5', 'Marc5');
 
-// person.forEach(function (person) {
-// 	console.log (person)
-// })
-// console.log (person.values());
-// console.log (person.keys());
-// console.log (person.get('name3'));
-// console.log (person.has('name3'));
-// console.log (person.has('name7'));
+// let numSet = new Set();
+// numSet.add('john');
+// numSet.add('john');
+// numSet.add('paul');
+// console.log (numSet.has('john'))
+// console.log (numSet.has('abc'))
+// console.log (numSet)
 
+
+// let numberSet = [1,2,3,4,5,3,1,2,5,7,9,2,1];
+// let numSet = new Set(numberSet);
+// Set ignored duplicated values
